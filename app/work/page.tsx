@@ -3,6 +3,12 @@ import { ProjectEngagement } from "@/components/ProjectEngagement";
 import { projects } from "@/db/schema";
 import { db } from "@/lib/db";
 import { asc, desc, eq, sql } from "drizzle-orm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Som Prakash - Work",
+  description: "Work page",
+};
 
 type Project = {
   id: string;

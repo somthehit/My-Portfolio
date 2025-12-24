@@ -1,4 +1,10 @@
 import { ContactForm } from "@/components/ContactForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Som Prakash - Contact",
+  description: "Contact page",
+};
 
 export default function ContactPage() {
   const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@example.com";
